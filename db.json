@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "23",
+      "firstname": "Samantha",
+      "age": 33,
+      "companyId": "1"
+    },
+    {
+      "id": "40",
+      "firstname": "Helen",
+      "age": 200,
+      "companyId": "2"
+    },
+    {
+      "id": "18",
+      "firstname": "Amanda",
+      "age": 50,
+      "companyId": "1"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+       "name": "Stargate Command", 
+       "description": "Go beyond"
+    },
+
+    {
+
+      "id": "2",
+       "name": "Sanctuary", 
+       "description": "Beautiful creatures"
+    }
+  ]
+}
