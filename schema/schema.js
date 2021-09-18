@@ -16,6 +16,17 @@ const {
 //];
 
 
+//shema company
+const CompanyType = new GraphQLObjectType({
+  name: 'Company',
+  fields : {
+    id: { type: GraphQLString },
+    name: { type: GraphQLString },
+    description: { type: GraphQLString }
+  }
+});
+
+
 //schema user
 const UserType = new GraphQLObjectType({
   name: 'User',
@@ -23,7 +34,15 @@ const UserType = new GraphQLObjectType({
     id: { type: GraphQLString },
     firstname: { type: GraphQLString },
     age: { type: GraphQLInt },
-  }
+    company: { 
+      type: CompanyType,
+      resolve(parentValue, args) {
+        return axios.get(`http://localhost:3000/companies/${parentValue.companyId}`)
+          .then(res => res.data);
+      }
+    }
+  },
+
 });
 
 //Root query
