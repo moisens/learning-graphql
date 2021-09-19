@@ -17,20 +17,28 @@
       "firstname": "Amanda",
       "age": 50,
       "companyId": "1"
+    },
+    {
+      "firstname": "Gemma",
+      "age": 38,
+      "id": "ckAhBX3"
+    },
+    {
+      "firstname": "Gemma",
+      "age": 38,
+      "id": "91NHQIF"
     }
   ],
   "companies": [
     {
       "id": "1",
-       "name": "Stargate Command", 
-       "description": "Go beyond"
+      "name": "Stargate Command",
+      "description": "Go beyond"
     },
-
     {
-
       "id": "2",
-       "name": "Sanctuary", 
-       "description": "Beautiful creatures"
+      "name": "Sanctuary",
+      "description": "Beautiful creatures"
     }
   ]
 }
